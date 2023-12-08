@@ -79,6 +79,7 @@ const Description = styled.div`
   font-size: 16px;
   color: #ffffff;
   line-height: 19.2px;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     width: 95%;
@@ -88,13 +89,15 @@ const Description = styled.div`
 `;
 
 const InfiniteCarousel = styled.div`
-  height: auto;
   width: 51%;
   border: 2px solid white;
   margin-left: 11px;
   margin-top: 44px;
   margin-right: 0;
   height: 304px;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     margin-top: 5%;
