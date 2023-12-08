@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { cards } from "../constants";
 
 function Cards() {
+  const [savedStates, setSavedStates] = useState({});
+
+  const handleSaveClick = (cardName) => {
+    setSavedStates((prevSavedStates) => ({
+      ...prevSavedStates,
+      [cardName]: !prevSavedStates[cardName],
+    }));
+  };
+
   return (
     <>
       {cards.map((card) => (
         <Card key={card.name}>
           <SaveContainer>
             <img src={card.imageUrl} alt="" />
-            <SaveButton>Save</SaveButton>
+            <SaveButton onClick={() => handleSaveClick(card.name)}>
+              {savedStates[card.name] ? (
+                "Saved"
+              ) : (
+                <img src="/images/Checkmark.svg" alt="saved" />
+              )}
+            </SaveButton>
           </SaveContainer>
 
           {card.name === "card1" && (
