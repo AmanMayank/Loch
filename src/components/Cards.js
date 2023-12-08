@@ -20,7 +20,7 @@ function Cards() {
             <img src={card.imageUrl} alt="" />
             <SaveButton onClick={() => handleSaveClick(card.name)}>
               {savedStates[card.name] ? (
-                "Saved"
+                "Save"
               ) : (
                 <img src="/images/Checkmark.svg" alt="saved" />
               )}

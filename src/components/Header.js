@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import CarouselCards from "./CarouselCards";
-import DashBoard from "./DashBoard";
-import Header from "./Header";
 
-function Whale() {
+function Header() {
   return (
-    <WhaleContainer>
-      {/* <Heading>
+    <HeaderContainer>
+      <Heading>
         <img src="/images/bell.svg" alt="bell" />
         <Title>Get notified when a highly correlated whale makes a move</Title>
         <Description>
@@ -18,38 +16,19 @@ function Whale() {
 
       <InfiniteCarousel>
         <CarouselCards />
-      </InfiniteCarousel> */}
-      <Header />
-
-      <DashBoard />
-    </WhaleContainer>
+      </InfiniteCarousel>
+    </HeaderContainer>
   );
 }
 
-export default Whale;
+export default Header;
 
-const WhaleContainer = styled.div`
-  border: 2px solid black;
-  width: 55%;
-  // background-image: radial-gradient(
-  //   ellipse at 0% 100%,
-  //   #1fa911,
-  //   #2f15d0,
-  //   #000000
-  // );
-  background-image: radial-gradient(
-    at bottom left,
-    #1fa911,
-    #2f15d0,
-    #000000 65%
-  );
-  height: auto;
+const HeaderContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 0;
+  width: 100%;
+  height: 100%;
 
   @media (max-width: 768px) {
-    height: auto;
     width: 100%;
     flex-direction: column;
   }
