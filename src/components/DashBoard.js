@@ -6,7 +6,7 @@ function DashBoard() {
   return (
     <Container>
       <Figures>
-        <img src="/images/Cohorts.svg" alt="dashboard" />
+        <img src="/images/Cohorts.png" alt="dashboard" />
       </Figures>
 
       <TextContainer>
@@ -33,6 +33,7 @@ const Container = styled.div`
   margin-top: 72px;
 
   @media (max-width: 768px) {
+    height: auto;
     flex-direction: column;
   }
 `;
@@ -53,7 +54,6 @@ const Figures = styled.div`
     margin: auto;
 
     img {
-      margin-top: 50px;
       width: 100%;
       transform: scale(1.5);
       margin-bottom: 50px;
@@ -67,6 +67,15 @@ const TextContainer = styled.div`
   height: 100%;
   //   border: 2px solid white;
   margin-left: 38px;
+
+  @media (max-width: 768px) {
+    position-relative;
+    width:95%;
+
+    img{
+        margin-right:32px;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -79,7 +88,7 @@ const Title = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
-    margin-right: auto;
+    margin-right: 0;
     margin-top: 10px;
   }
 `;
@@ -98,5 +107,6 @@ const Description = styled.div`
     width: 95%;
     margin-right: auto;
     margin-top: 10px;
+    padding-right: 17px;
   }
 `;

@@ -10,6 +10,7 @@ export default SignUp;
 const SignUpContainer = styled.div`
   border: 2px solid black;
   width: 45%;
+  height: auto;
 
   @media (max-width: 768px) {
     width: 100%;
