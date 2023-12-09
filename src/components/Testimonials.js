@@ -31,6 +31,10 @@ const Heading = styled.div`
   color: #f2f2f2;
   width: 92%;
   margin-top: 22px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
 const Line = styled.div`

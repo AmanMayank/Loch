@@ -17,19 +17,19 @@ function Whale() {
 export default Whale;
 
 const WhaleContainer = styled.div`
-  border: 2px solid black;
-  width: 55%;
+  width: 800px;
   // background-image: radial-gradient(
-  //   ellipse at 0% 100%,
-  //   #1fa911,
+  //   at bottom left,
+  //   #1fa911 15%,
   //   #2f15d0,
-  //   #000000
+  //   #000000 65%
   // );
+
   background-image: radial-gradient(
-    at bottom left,
-    #1fa911,
-    #2f15d0,
-    #000000 65%
+    ellipse at -140% 100%,
+    #1fa911 40%,
+    #2f15d0 68%,
+    #000000 77%
   );
   height: auto;
   display: flex;

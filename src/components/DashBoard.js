@@ -11,10 +11,10 @@ function DashBoard() {
 
       <TextContainer>
         <img src="/images/Eye.svg" alt="bell" />
-        <Title>Get notified when a highly correlated whale makes a move</Title>
+        <Title>Watch what the whales are doing</Title>
         <Description>
-          Find out when a certain whale moves more than any preset amount
-          on-chain or when a dormant whale you care about becomes active.
+          All whales are not equal. Know exactly what the whales impacting YOUR
+          portfolio are doing.
         </Description>
       </TextContainer>
     </Container>
@@ -24,28 +24,33 @@ function DashBoard() {
 export default DashBoard;
 
 const Container = styled.div`
-  width: 84%;
+  width: 678px;
   height: 306px;
-  //   border: 2px solid white;
-  //   margin-left: 60px;
   margin: auto;
   display: flex;
   margin-top: 72px;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 62px;
 
   @media (max-width: 768px) {
     height: auto;
     flex-direction: column;
+    margin-left: 10px;
+    align-items: cener;
+    width: 95%;
   }
 `;
 
 const Figures = styled.div`
-  width: 50%;
-  height: 100%;
+  width: 335px;
+  height: 306px;
+  overflow: hidden;
 
   img {
-    height: auto;
-    width: 100%;
-    transform: scale(1.35);
+    height: 306px;
+    width: 335px;
+    transform: scale(1.5);
   }
 
   @media (max-width: 768px) {
@@ -65,8 +70,8 @@ const TextContainer = styled.div`
   text-align: right;
   width: 50%;
   height: 100%;
-  //   border: 2px solid white;
   margin-left: 38px;
+  width: 305px;
 
   @media (max-width: 768px) {
     position-relative;
@@ -80,11 +85,11 @@ const TextContainer = styled.div`
 
 const Title = styled.div`
   height: auto;
-  width: 97%;
   font-size: 31px;
   line-height: 37.2px;
   color: #ffffff;
   margin-top: 16px;
+  width: 100%;
 
   @media (max-width: 768px) {
     width: 90%;

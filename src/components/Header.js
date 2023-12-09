@@ -35,9 +35,8 @@ const HeaderContainer = styled.div`
 `;
 
 const Heading = styled.div`
-  // border: 2px solid white;
-  width: 40%;
-  height: 260px;
+  width: 322px;
+  height: 251px;
   margin-top: 86px;
   margin-left: 7.5%;
 
@@ -59,6 +58,7 @@ const Title = styled.div`
   line-height: 37.2px;
   color: #ffffff;
   margin-top: 16px;
+  text-shadow: 0 4px 4px #00000040;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -87,7 +87,6 @@ const Description = styled.div`
 const InfiniteCarousel = styled.div`
   position: relative;
   width: 51%;
-  // border: 2px solid white;
   margin-left: 11px;
   margin-top: 44px;
   margin-right: 0;
@@ -104,16 +103,17 @@ const InfiniteCarousel = styled.div`
     top: 0;
     bottom: 0;
     width: 10%;
-    box-shadow: 30px 0px 25px rgba(0, 0, 0, 0.2),
-      -30px 0 25px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    box-shadow: 50px 0px 30px rgba(0, 0, 0, 0.5),
+      -50px 0 30px rgba(0, 0, 0, 0.2);
   }
 
   &::before {
-    left: -12%;
+    left: -15%;
   }
 
   &::after {
-    right: -12%;
+    right: -15%;
   }
 
   @media (max-width: 768px) {
