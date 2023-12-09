@@ -30,7 +30,7 @@ function SignUp() {
         <InputBox
           type="email"
           placeholder="hello@gmail.com"
-          value={email}
+          value={email || " "}
           onChange={(e) => setEmail(e.target.value)}
         ></InputBox>
         <Button onClick={handleSignUp}>Get started</Button>
