@@ -50,7 +50,7 @@ const Figures = styled.div`
   img {
     height: 306px;
     width: 335px;
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 
   @media (max-width: 768px) {
@@ -60,7 +60,7 @@ const Figures = styled.div`
 
     img {
       width: 100%;
-      transform: scale(1.5);
+      transform: scale(1.3);
       margin-bottom: 50px;
     }
   }
